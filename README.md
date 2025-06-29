@@ -62,3 +62,15 @@ Screenshot:
 ![full_traffic_jinja_diffcalculia_mcp_with_print.png](full_traffic_jinja_diffcalculia_mcp_with_print.png)
 
 
+# [think] tags show up with jinja
+
+Next, I shut down open hands, removed my patch, checked out main, and then applied [open_hands_think_tags_abbr.diff](open_hands_think_tags_abbr.diff)
+
+`full_traffic_jinja_diffcalculia_mcp_with_hackish_think.mitm` shows this conversation. You can view the transcript with:
+
+```bash
+mitmdump -nr full_traffic_jinja_diffcalculia_mcp_with_hackish_think.mitm --flow-detail 4
+```
+
+Screenshot:
+![full_traffic_jinja_diffcalculia_mcp_with_hackish_think.png](full_traffic_jinja_diffcalculia_mcp_with_hackish_think.png)

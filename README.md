@@ -58,6 +58,7 @@ Next, I shut down llama.cpp and started it back up with `--jinja`.
 mitmdump -nr full_traffic_jinja_diffcalculia_mcp_with_print.mitm --flow-detail 4
 ```
 
-Screenshot: [full_traffic_jinja_diffcalculia_mcp_with_print.png](full_traffic_jinja_diffcalculia_mcp_with_print.png)
+Screenshot:
+![full_traffic_jinja_diffcalculia_mcp_with_print.png](full_traffic_jinja_diffcalculia_mcp_with_print.png)
 
 

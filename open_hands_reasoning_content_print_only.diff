@@ -1,0 +1,32 @@
+diff --git a/openhands/agenthub/codeact_agent/function_calling.py b/openhands/agenthub/codeact_agent/function_calling.py
+index 2359865f8..5aa4066fb 100644
+--- a/openhands/agenthub/codeact_agent/function_calling.py
++++ b/openhands/agenthub/codeact_agent/function_calling.py
+@@ -80,11 +80,13 @@ def response_to_actions(
+             hasattr(assistant_msg, 'reasoning_content')
+             and assistant_msg.reasoning_content
+         ):
++            print("reasoning_content=", str(assistant_msg.reasoning_content));
+             reasoning_content = str(assistant_msg.reasoning_content)
+         elif isinstance(assistant_msg.content, list):
+             # Check if reasoning content is embedded in content list (for consistency with thought extraction)
+             for msg in assistant_msg.content:
+                 if isinstance(msg, dict) and msg.get('type') == 'reasoning':
++                    print("reasoning msg:", msg)
+                     reasoning_content = msg.get('content', '')
+                     break
+ 
+@@ -266,11 +268,13 @@ def response_to_actions(
+             hasattr(assistant_msg, 'reasoning_content')
+             and assistant_msg.reasoning_content
+         ):
++            print("else reasoning_content=", str(assistant_msg.reasoning_content));
+             reasoning_content = str(assistant_msg.reasoning_content)
+         elif isinstance(assistant_msg.content, list):
+             # Check if reasoning content is embedded in content list (for consistency with thought extraction)
+             for msg in assistant_msg.content:
+                 if isinstance(msg, dict) and msg.get('type') == 'reasoning':
++                    print("else reasoning msg:", msg)
+                     reasoning_content = msg.get('content', '')
+                     break
+ 

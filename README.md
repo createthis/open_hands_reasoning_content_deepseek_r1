@@ -74,3 +74,16 @@ mitmdump -nr full_traffic_jinja_diffcalculia_mcp_with_hackish_think.mitm --flow-
 
 Screenshot:
 ![full_traffic_jinja_diffcalculia_mcp_with_hackish_think.png](full_traffic_jinja_diffcalculia_mcp_with_hackish_think.png)
+
+# [think] tags show up without jinja too
+
+Next, I shut down llama.cpp and restarting it adding the `--jinja` flag, then repeated the conversation.
+
+`full_traffic_no_jinja_diffcalculia_mcp_with_hackish_think.mitm` shows this conversation. You can view the transcript with:
+
+```bash
+mitmdump -nr full_traffic_no_jinja_diffcalculia_mcp_with_hackish_think.mitm --flow-detail 4
+```
+
+Screenshot:
+![full_traffic_no_jinja_diffcalculia_mcp_with_hackish_think.png](full_traffic_no_jinja_diffcalculia_mcp_with_hackish_think.png)
